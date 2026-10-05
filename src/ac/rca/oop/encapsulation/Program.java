@@ -3,7 +3,14 @@ package ac.rca.oop.encapsulation;
 import ac.rca.oop.inheritance.Student;
 
 public class Program {
-
+    public static int value = 10;
+    public int value2 = 30;
+    public int addition(int a,int b) {
+        return a + value;
+    }
+    public static int addition(int a,int b,int c){
+        return a + b + c;
+    }
     public static void main(String[] args) {
 
         // Using the no-argument constructor
@@ -22,16 +29,10 @@ public class Program {
                 "ThinkBook",
                 2025
         );
-
-        System.out.println(laptop1);
-        System.out.println(laptop2);
-        Student s1 = new Student("Dan","Christian",12,"RCA","SPE","l4");
-        System.out.println(s1);
-        Person p2 = new Person("Dan","Iradukunda",15);
-        System.out.println(p2);
-        Person p3 = new Student("Jack","Rosa",11,"RCA","SPE","l8");
-        System.out.println(p3);
-        Object s5 = new Student("Amanda","Ishimwe",12,"RCA","SDE","l8");
-        System.out.println(s5);
+        //System.out.println(value);
+        //System.out.println(addition(1,2,3));
+        Program pr1 = new Program();
+        System.out.println(pr1.value2);
+        System.out.println(pr1.addition(2,6));
+        }
     }
-}
