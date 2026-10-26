@@ -5,4 +5,4 @@ class coding {
 class Academy{
 
 }
-public class Rwanda{}
+
